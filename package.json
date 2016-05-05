@@ -1,0 +1,11 @@
+{
+  "name": "lorem",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "lorem-ipsum": "^1.0.3"
+  }
+}
