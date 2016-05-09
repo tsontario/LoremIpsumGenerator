@@ -2,20 +2,22 @@
 <!--TODO Write out HTML for entire form, to be broken down into partials later-->
 
 <!-- Routing action broken, need to fix-->
-<form method="POST" action="result.html">
-    <h1>Lorem Ipsum Generator</h1>
+ <div class="form">
+    <form method="GET" action="result.html">
+        <h1>Lorem Ipsum Generator</h1>
 
-    <label>Organize By...</label>
+        <div class="form-body">
+            <p>I want to generate <input type="number" id="number" value="number" name="number_of">
+                <select id="type" name="organize_by">
+                    <option value="letters">Letters</option>
+                    <option value="words">Words</option>
+                    <option value="senteces">Sentences</option>
+                    <option value="paragraphs">Paragraphs</option>
+                </select>
+                of Lorem Ipsum Text
+            </p>
 
-    <input type="radio" id="words" value="words" name="organize_by">
-    <label for="words">Words</label>
-
-    <input type="radio" id="sentences" value="sentences" name="organize_by">
-    <label for="sentences">Sentences</label>
-
-    <input type="radio" id="paragraphs" value="paragraphs" name="organize_by">
-    <label for="paragraphs">Paragraphs</label>
-
-    <button type="submit">Generate Text</button>
-</form>
-
+            <button type="submit">Generate Text</button>
+        </div>
+    </form>
+ </div>

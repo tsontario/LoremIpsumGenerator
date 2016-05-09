@@ -6,7 +6,6 @@ var fs = require('fs');
 
 /* Pass optional arguments function for key-value pairs for templating custom content */
 var rend = function(templateNames, response) {
-    var data = "";
     
     for (var i=0; i<templateNames.length; i++) {
         var fileContents = fs.readFileSync("views/" + templateNames[i] + ".html").toString();

@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "json": "^9.0.3",
     "lorem-ipsum": "^1.0.3"
   }
 }
